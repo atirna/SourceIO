@@ -151,11 +151,6 @@ class CollisionModel:
             vertex_data = np.frombuffer(buffer.read(4 * 4 * vertex_count), np.float32).copy()
             vertex_data = vertex_data.reshape((-1, 4))[:, :3]
 
-            y = vertex_data[:, 1].copy()
-            z = vertex_data[:, 2].copy()
-            vertex_data[:, 1] = z
-            vertex_data[:, 2] = y
-
         return vertex_data
 
 
