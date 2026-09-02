@@ -22,7 +22,6 @@ from SourceIO.library.shared.content_manager import ContentManager
 from SourceIO.library.shared.content_manager.provider import ContentProvider
 from SourceIO.library.utils.common import get_slice
 from SourceIO.library.utils.path_utilities import path_stem, collect_full_material_names
-from SourceIO.library.utils.perf_sampler import timed
 from SourceIO.logger import SourceLogMan
 
 log_manager = SourceLogMan()
