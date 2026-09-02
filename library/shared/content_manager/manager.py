@@ -154,7 +154,6 @@ class ContentManager(ContentProvider, metaclass=SingletonMeta):
             for provider in providers:
                 logger.info(f"Mounted: {provider}")
             self.children.update(set(providers))
-            pass
             return
         self._find_steam_appid(scan_path)
         if scan_path.suffix == '.vpk':
